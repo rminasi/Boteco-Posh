@@ -1,3 +1,8 @@
+.container {
+  height: 100%;
+  position: relative;
+}
+
 .banner {
   text-align: center;
   margin: 20px 0px 40px 0px;
@@ -7,5 +12,11 @@
 .camero {
   background-image: image-url('neon.jpg');
   background-size: cover;
+  height: 200vh;
   width: 100%;
 }
+.boteco {
+  color: #33dff7;
+}
+
+

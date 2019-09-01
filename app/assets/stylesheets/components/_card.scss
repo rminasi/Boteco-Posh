@@ -1,11 +1,11 @@
-// .card {
-//   margin: 20px;
-//   padding: 10px;
-//   color: black;
-//   width: 100%;
-//   text-align: center;
-
-// }
+.card {
+  margin: 20px;
+  padding: 10px;
+  color: black;
+  width: 100%;
+  text-align: center;
+  opacity: 0.4;
+}
 .cards-title {
   margin-left: 140px;
   margin-top: 10px;
@@ -68,12 +68,12 @@
   width: 100%;
   padding: 5px 0 10px 10px;
 }
-.card-avatar {
-  position: absolute;
-  top: calc(75% - 20px);
-  right: 10px;
-  border: 2px white solid;
-}
+// .card-avatar {
+//   position: absolute;
+//   top: calc(75% - 20px);
+//   right: 10px;
+//   border: 2px white solid;
+// }
 
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {

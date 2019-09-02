@@ -1,24 +1,21 @@
 
 
-<div class="camero" >
+<div class="background" >
   <div class="container">
     <header class="d-flex flex-column align-items-center justify-content-center">
       <h1 class="boteco">Boteco Posh!</h1>
       <p class="boteco">Amazing drinks for amazing people!</p>
       <%= link_to "Add a cocktail", new_cocktail_path, class: "btn btn-success btn-lg radius:10px" %>
     </header>
-    <div class="cocktail-cards">
-      <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-<!--         <div class="card-body">
- -->        <h5 class="card-title"><% @cocktails.each do |cocktail| %></h5>
-        <h3><%= link_to cocktail_path(cocktail), class: 'nav-link' do %></h3>
-            <%= cocktail.name %>
-            <% end %>
-        <% end %>
+
+  <div class="cocktail-grid">
+    <% @cocktails.each do |cocktail| %>
+      <%= link_to(cocktail_path(cocktail), class: 'cocktail-name') do %>
+      <div class="cocktail-card" style="background-image: url(<%=cocktail.photo%>)">
+      <h4><%= cocktail.name %></h4>
       </div>
-    </div>
+      <% end %>
+    <% end %>
   </div>
 </div>
-
 

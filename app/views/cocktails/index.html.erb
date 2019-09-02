@@ -7,6 +7,15 @@
       <p class="boteco">Amazing drinks for amazing people!</p>
       <%= link_to "Add a cocktail", new_cocktail_path, class: "btn btn-success btn-lg radius:10px" %>
     </header>
+
+  <div class="cocktail-grid">
+    <% @cocktails.each do |cocktail| %>
+      <%= link_to(cocktail_path(cocktail), class: 'cocktail-name') do %>
+      <div class="cocktail-card" style="background-image: url(<%=cocktail.photo%>)">
+      <h4><%= cocktail.name %></h4>
+      </div>
+      <% end %>
+    <% end %>
   </div>
 </div>
 

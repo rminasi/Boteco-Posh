@@ -6,6 +6,18 @@
   text-align: center;
   opacity: 0.4;
 }
+
+.cocktail-cards {
+  border-radius: 4px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  // padding: 2vw;
+  min-width: 60%;
+  flex-wrap: wrap;
+  // justify-content: center;
+  // align-items: center;
+}
+
 .cards-title {
   margin-left: 140px;
   margin-top: 10px;

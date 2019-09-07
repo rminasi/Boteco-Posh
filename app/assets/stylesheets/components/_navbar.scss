@@ -1,6 +1,7 @@
 .navbar-lewagon {
   justify-content: space-between;
   background: #082850;
+  z-index: 1;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -9,6 +10,7 @@
 
 .navbar-lewagon .navbar-brand img {
   width: 50px;
+  margin: 0;
 }
 
 /* User Avatar */
@@ -27,11 +29,6 @@
   align-items: center;
   justify-content: space-between;
 }
-
-.navbar-wagon-brand img {
-  height: 50px;
-}
-
 
 .navbar-wagon-right {
   display: flex;

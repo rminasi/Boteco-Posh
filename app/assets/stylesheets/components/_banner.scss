@@ -10,6 +10,8 @@
 }
 
 .background {
+  position: absolute;
+  top: 85px;
   background-image: image-url('neon.jpg');
   background-size: cover;
   height: 200vh;
@@ -17,6 +19,12 @@
 }
 .boteco {
   color: #33dff7;
+  padding-top: 30px;
+  font-size: 60px;
 }
 
-
+.boteco1 {
+  font-size: 20px;
+  color: #33dff7;
+  padding-top: 30px;
+}

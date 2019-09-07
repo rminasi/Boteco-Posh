@@ -1,24 +1,28 @@
 
 
-<div class="camero" >
+<div class="background" >
   <div class="container">
     <header class="d-flex flex-column align-items-center justify-content-center">
       <h1 class="boteco">Boteco Posh!</h1>
-      <p class="boteco">Amazing drinks for amazing people!</p>
+      <p class="boteco1">Amazing drinks for amazing people!</p>
       <%= link_to "Add a cocktail", new_cocktail_path, class: "btn btn-success btn-lg radius:10px" %>
     </header>
-    <div class="cocktail-cards">
-      <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-<!--         <div class="card-body">
- -->        <h5 class="card-title"><% @cocktails.each do |cocktail| %></h5>
-        <h3><%= link_to cocktail_path(cocktail), class: 'nav-link' do %></h3>
-            <%= cocktail.name %>
+
+        <div class="container-fluid my-flexy">
+          <div class="card-box-index">
+            <% @cocktails.each do |cocktail| %>
+              <div class='nav-link'><%= link_to(cocktail_path(cocktail)) do %>
+                <div class="cards-index">
+                  <div class="info-cont">
+                    <%= cocktail.name %></p>
+                  </div>
+                  <div class="card-img" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= cl_image_tag(cocktail.photo) %>)">
+                  </div>
+              </div>
             <% end %>
-        <% end %>
+          <% end %>
+        </div>
       </div>
     </div>
   </div>
 </div>
-
-

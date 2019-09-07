@@ -2,12 +2,13 @@ import Typed from 'typed.js';
 
 const loadDynamicBannerText = () => {
   new Typed('#banner-typed-text', {
-    strings: ["","mister cocktail"],
-    typeSpeed: 300,
+    strings: ["","Boteco Posh!"],
+    typeSpeed: 1300,
     backSpeed: 0,
-    backDelay: 500,
-    startDelay: 500,
-    loop: false,
+    backDelay: 1200,
+    startDelay: 1500,
+    loop: true,
+    loopCount: Infinity,
   });
 }
 

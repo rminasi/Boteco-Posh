@@ -1,27 +1,26 @@
 
 
 <div class="background" >
-  <div class="container">
+  <div class="container-cocktail">
     <header class="d-flex flex-column align-items-center justify-content-center">
       <h1 class="boteco">Boteco Posh!</h1>
       <p class="boteco1">Amazing drinks for amazing people!</p>
       <%= link_to "Add a cocktail", new_cocktail_path, class: "btn btn-success btn-lg radius:10px" %>
     </header>
-
-        <div class="container-fluid my-flexy">
-          <div class="card-box-index">
-            <% @cocktails.each do |cocktail| %>
-              <div class='nav-link'><%= link_to(cocktail_path(cocktail)) do %>
-                <div class="cards-index">
-                  <div class="info-cont">
-                    <%= cocktail.name %></p>
-                  </div>
-                  <div class="card-img" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= cl_image_tag(cocktail.photo) %>)">
-                  </div>
+  <h1 class="index-title"></h1>
+    <div class="container-fluid my-flexy">
+      <div class="card-box-index">
+        <% @cocktails.each do |cocktail| %>
+          <%= link_to(cocktail_path(cocktail), class: "nav-link") do %>
+            <div class="cards-index">
+              <div class="card-img" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= cl_image_tag(cocktail.photo) %>)">
+                </div>
+                <div class="info-cont">
+                  <p class="mb0"><%= cocktail.name %></p>
               </div>
-            <% end %>
+            </div>
           <% end %>
-        </div>
+        <% end %>
       </div>
     </div>
   </div>

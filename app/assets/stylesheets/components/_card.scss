@@ -44,6 +44,12 @@
   align-items: center;
   justify-content: center;
   border-radius: 8px;
+  position: absolute;
+  bottom: 0;
+  background-color: white;
+  height: 30%;
+  width: 120%;
+  padding: 5px 0 10px 10px;
 }
 
 .cards-title {
@@ -66,12 +72,12 @@
 .cards-index {
   display: flex;
   flex-direction: row;
-  // justify-content: center;
+  justify-content: center;
   align-items: center;
   border: 1px solid #dddddd;
   border-radius: 4px;
   // box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
-  width: 20vw;
+  width: 28vw;
   height: 250px;
   position: relative;
   &:hover {
@@ -81,16 +87,45 @@
  }
 
 .card-box-index {
-  border-radius: 4px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding: 2vw;
-  min-width: 60%;
-  flex-wrap: wrap;
-  // justify-content: center;
-  // align-items: center;
+  // border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  // padding: 2vw;
+  width: 100%;
+  justify-content: center;
 }
 
+.card-img {
+  border-radius: 4px 4px 0 0;
+  border: 1px solid #dddddd;
+  width: 28vw;
+  height: 80%;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+}
+
+.info-cont {
+  font-size: 24px;
+  color: #33DFF8;
+  position: absolute;
+  bottom: 0;
+  background-color: white;
+  text-align: center;
+  height: 20%;
+  width: 28vw;
+  padding: 5px 0 10px 10px;
+  &:hover {
+    color: pink;
+    text-decoration: none;
+    transform: scale(1.05);
+  }
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
 .cards {
   display: flex;
   flex-direction: row;
@@ -111,31 +146,18 @@
 }
 
 .nav-link {
+  display: grid;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 12px;
+  margin-top: 24px;
   color: #605a5a;
   &:hover {
     color: #605a5a;
   }
 }
 
-.card-img {
-  border-radius: 4px 4px 0 0;
-  border: 1px solid #dddddd;
-  width: 100%;
-  height: 62%;
-  background-size: cover;
-  background-position: center;
-  position: absolute;
-  top: 0;
-}
-
-.info-cont {
-  position: absolute;
-  bottom: 0;
-  background-color: white;
-  height: 25%;
-  width: 100%;
-  padding: 5px 0 10px 10px;
-}
 // .card-avatar {
 //   position: absolute;
 //   top: calc(75% - 20px);

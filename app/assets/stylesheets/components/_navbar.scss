@@ -2,10 +2,12 @@
   justify-content: space-between;
   background: #082850;
   z-index: 1;
+  position: relative;
 }
 
 .navbar-lewagon .navbar-collapse {
   flex-grow: 0;
+  color: #33DFF8;
 }
 
 .navbar-lewagon .navbar-brand img {
@@ -18,6 +20,8 @@
   height: 50px;
   width: 50px;
   border-radius: 50%;
+  position: absolute;
+  right: 0;
 }
 
 .navbar-wagon {
@@ -42,8 +46,9 @@
 }
 
 .navbar-wagon-link {
-  color: #616668;
+  color: #33DFF8;
   font-size: 14px;
+
 }
 .navbar-wagon-link:hover {
   color: #da552f;

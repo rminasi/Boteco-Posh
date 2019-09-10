@@ -13,10 +13,10 @@
         <% @cocktails.each do |cocktail| %>
           <%= link_to(cocktail_path(cocktail), class: "nav-link") do %>
             <div class="cards-index">
-               <div class="card-img" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= cl_image_tag(cocktail.photo) %>)" >
+               <div class="card-img" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= cl_image_path cocktail.photo %>)" >
                 </div>
                 <div class="info-cont">
-                  <p class="mb0"><%= cocktail.name %></p>
+                  <%= cocktail.name %>
               </div>
             </div>
           <% end %>

@@ -15,8 +15,10 @@
 .background {
   position: absolute;
   top: 75px;
+  // background-attachment: fixed;
   background-image: image-url('neon.jpg');
-  background-size: cover;
+  background-position: center;
+  background-size: 1200px;
   height: 200vh;
   width: 100%;
 }
@@ -32,4 +34,14 @@
   color: #33dff7;
   padding-top: 20px;
   font-family: 'Dancing Script', cursive;
+}
+
+.container-fluid {
+  width: 100%;
+  position: absolute;
+  bottom: 110px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }

@@ -9,8 +9,8 @@ drink_list.each do |drink|
   Ingredient.create(name: "#{drink['strIngredient1']}")
 end
 
-Cocktail.create(name: 'Caipirinha', remote_photo_url: 'caipirinha.jpg')
-Cocktail.create(name: 'Caipiroska', remote_photo_url: 'caipiroska.jpg')
-Cocktail.create(name: 'Kir Royale', remote_photo_url: 'Kir-Royale.jpg')
-Cocktail.create(name: 'Sangria', remote_photo_url: 'sangria.jpg')
-Cocktail.create(name: 'Mojito', remote_photo_url: 'mojito.jpg')
+# Cocktail.create(name: 'Caipirinha', remote_photo_url: 'caipirinha.jpg')
+# Cocktail.create(name: 'Caipiroska', remote_photo_url: 'caipiroska.jpg')
+# Cocktail.create(name: 'Kir Royale', remote_photo_url: 'Kir-Royale.jpg')
+# Cocktail.create(name: 'Sangria', remote_photo_url: 'sangria.jpg')
+# Cocktail.create(name: 'Mojito', remote_photo_url: 'mojito.jpg')

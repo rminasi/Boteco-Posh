@@ -14,3 +14,4 @@ end
 # Cocktail.create(name: 'Kir Royale', remote_photo_url: 'Kir-Royale.jpg')
 # Cocktail.create(name: 'Sangria', remote_photo_url: 'sangria.jpg')
 # Cocktail.create(name: 'Mojito', remote_photo_url: 'mojito.jpg')
+# Cocktail.create(name: 'Long Island', remote_photo_url: 'long_island.jpg')

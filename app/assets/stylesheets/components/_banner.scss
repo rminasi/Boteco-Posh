@@ -19,14 +19,27 @@
   background-image: image-url('neon.jpg');
   background-position: center;
   background-size: 1200px;
-  height: 200vh;
+  height: 160vh;
   width: 100%;
+
+  @media(max-width: 576px) {
+    position: absolute;
+    background-size: 550px;
+    background-attachment: fixed;
+    background-position: center;
+    height: 170vh;
+    width:100%;
+  }
 }
 .boteco {
   color: #33dff7;
   padding-top: 30px;
   font-size: 100px;
   font-family: 'Pacifico', cursive;
+
+  @media(max-width: 576px) {
+    font-size: 60px;
+  }
 }
 
 .boteco1 {
@@ -34,6 +47,11 @@
   color: #33dff7;
   padding-top: 20px;
   font-family: 'Dancing Script', cursive;
+
+  @media(max-width: 576px) {
+    font-size: 20px;
+    padding-top: 5px;
+  }
 }
 
 .container-fluid {

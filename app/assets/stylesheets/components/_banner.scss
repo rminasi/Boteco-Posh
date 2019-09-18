@@ -15,7 +15,6 @@
 .background {
   position: absolute;
   top: 75px;
-  // background-attachment: fixed;
   background-image: image-url('neon.jpg');
   background-position: center;
   background-size: 1200px;
@@ -25,8 +24,8 @@
   @media(max-width: 576px) {
     position: absolute;
     background-size: 550px;
-    background-attachment: fixed;
     background-repeat: none;
+    background-attachment: fixed;
     background-position: center;
     height: 170vh;
     width:100%;
@@ -69,3 +68,4 @@
   position: absolute;
   right: 30px;
 }
+

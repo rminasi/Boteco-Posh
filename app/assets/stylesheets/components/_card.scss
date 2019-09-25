@@ -80,6 +80,7 @@
   width: 10vw;
   height: 150px;
   position: relative;
+
     @media(max-width: 576px) {
       justify-content: center;
       align-items: center;
@@ -107,6 +108,14 @@
   // padding: 2vw;
   min-width: 60%;
   flex-wrap: wrap;
+    @media(max-width: 576px) {
+      width: 100%;
+      justify-content: center;
+      grid-template-columns: 1fr;
+      position: absolute;
+      bottom: 0;
+
+    }
 
   .info-cont {
     font-size: 16px;
